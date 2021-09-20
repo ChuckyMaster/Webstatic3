@@ -205,6 +205,7 @@ header div h1 {
 
   margin: auto;
 }
+
 #feature ul li {
   padding: 15px 25px;
   display: flex;
@@ -220,6 +221,7 @@ header div h1 {
 #feature ul li:nth-child(odd) {
   background-color: rgba(128, 128, 128, 0.089);
 }
+/* correction: #feature li:nth-of-type(odd) */
 
 /* MAP */
 
@@ -255,6 +257,39 @@ footer .reseau {
 footer .reseau ul li {
   display: inline-block;
 }
+
+
+.reseau ul li a {
+
+text-align: center;
+line-height: 60px;
+background: black ;
+border-radius: 50%;
+/* font-size: 30px; */
+color:white ;
+
+}
+ /* effet hover sur icone */
+
+
+.reseau ul li a:hover::before {
+  
+  transform: scale(1.1);
+  /* box-shadow: 0 0 15px var(--main); */
+}
+
+.reseau ul li a:hover i {
+  transition: 0.9s;
+  padding: 10px;
+  color: var(--main);
+ font-size: 65px;
+ border-radius: 50%;
+  box-shadow: 0 0  20px var(--main);
+  text-shadow: 0 0 10px var(--main);
+}
+
+
+
 
 /* partie form */
 
@@ -313,7 +348,6 @@ label {
   pointer-events: none;
   transition: all 0.5s ease;
 }
-
 
 /* partie coordonnee */
 
